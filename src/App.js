@@ -9,22 +9,27 @@ import PricingSection from './components/PricingSection';
 import ComparisonSection from './components/ComparisonSection';
 import ModularSolutions from './components/ModularSolutions';
 import BackgroundElements from './components/BackgroundElements';
+import EnhancedMobileDemo from './mobile/EnhancedMobileDemo';
+import './mobile/mobile.css';
 
 const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 relative overflow-hidden">
       <BackgroundElements />
       
+      {/* Enhanced Mobile Demo Section - Front Page */}
+      <EnhancedMobileDemo />
+      
       <div className="max-w-7xl mx-auto px-10 py-16 relative z-10">
-        {/*<Header />*/}
-        <ProblemSolutionSection />
+        {/* <Header />*/}
+        {/* <ProblemSolutionSection /> */}
         {/* <ProblemSection /> */}
         {/* <PlatformLayers />
         <SolutionOverview />
         <HowItWorks /> */}
-        <PricingSection />
+        {/* <PricingSection />
         <ComparisonSection />
-        <ModularSolutions />
+        <ModularSolutions /> */}
       </div>
     </div>
   );
